@@ -33,9 +33,9 @@ describe('App1 Component', () => {
     expect(consoleSpy).toHaveBeenCalledWith('Selected Option:', expect.objectContaining({ label: 'India', value: 'India' }));
 
     userEvent.click(dropdown);
-    userEvent.click(screen.getByText('Pakistan'));
+    userEvent.click(screen.getByText('Pakistan')); 
     const selectedValuePakistan = screen.getByText('Pakistan');
-    expect(selectedValuePakistan).toBeInTheDocument();
+    expect(selectedValuePakistan).toBeInTheDocument(); 
     expect(consoleSpy).toHaveBeenCalledWith('Selected Option:', expect.objectContaining({ label: 'Pakistan', value: 'Pakistan' }));
 
     consoleSpy.mockRestore(); 
