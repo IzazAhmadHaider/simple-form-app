@@ -50,14 +50,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .App {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
   width: 400px;
+  /* overflow-y: scroll; */
 }
 
 h2 {
@@ -115,7 +116,7 @@ input[type="submit"]:hover {
 /* Custom styling for the dropdown options */
 .Select__option {
   color: #333;
-  background-color: #fff;
+  background-color: #5d1f1f;
 }
 
 /* Custom styling for the selected option */
