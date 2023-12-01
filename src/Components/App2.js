@@ -5,9 +5,9 @@ function App2({Name , Email}) {
   return (
     <div className="App">
         <div>{`Your Name ${Name}`}</div>
-        <div>{`Your Email ${Email} `}</div>
+        <div>{`Your Email  ${Email} `}</div>
     </div>
   );
 }
 
-export default App2;
+export default App2;   
