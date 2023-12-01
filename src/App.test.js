@@ -26,7 +26,7 @@ describe('App1 Component', () => {
     // const dropdown = screen.getByTestId('custom-element')
     const consoleSpy = jest.spyOn(console, 'log');
 
-    userEvent.click(dropdown);
+    userEvent.click(dropdown);  
     userEvent.click(screen.getByText('India'));
     const selectedValueIndia = screen.getByText('India');
     expect(selectedValueIndia).toBeInTheDocument();
