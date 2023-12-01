@@ -3,6 +3,10 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App1 from './Components/App1';
+import { configure } from '@testing-library/dom';
+
+configure({ testIdAttribute: 'data-my-test-attribute' });
+
 
 describe('App1 Component', () => {
   it('renders form elements and handles form submission', () => {
@@ -21,7 +25,8 @@ describe('App1 Component', () => {
 
   it('interacts with the dropdown', () => {
     render(<App1 />);
-    const dropdown = screen.getByRole('combobox');
+    // const dropdown = screen.getByRole('combobox');
+    const dropdown = screen.getByTestId('custom-element')
     const consoleSpy = jest.spyOn(console, 'log');
 
     userEvent.click(dropdown);

@@ -69,10 +69,11 @@ function App1() {
         <input type="submit" value="Submit" />
         <div>{formData.autofocus}</div>
 
-        <div className="App">
+        <div className="App" >
           <Select
+          data-testid="custom-element"
              id='izaz'
-            data-testid="myDropdown"
+            // data-testid="myDropdown"
             defaultValue={selectedOption}
             onChange={handleSelectChange} // Add onChange handler
             options={options}
