@@ -38,6 +38,6 @@ describe('App1 Component', () => {
     expect(selectedValuePakistan).toBeInTheDocument();
     expect(consoleSpy).toHaveBeenCalledWith('Selected Option:', expect.objectContaining({ label: 'Pakistan', value: 'Pakistan' }));
 
-    consoleSpy.mockRestore();
+    consoleSpy.mockRestore(); 
   });
 });
